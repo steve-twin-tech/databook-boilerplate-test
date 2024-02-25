@@ -1,0 +1,141 @@
+##
+## Theme settings
+##
+
+remote_theme:   "Fortelle/databook-theme"
+
+
+##
+## Site settings
+##
+
+title:          "Databook"
+description:    "A starter template for the Databook-theme."
+logo:           "assets/databook/img/logo.png" 
+copyright:      ""
+keywords:       ""
+
+baseurl:        #
+language:       "en-US"
+npm_cdn:        "https://cdn.jsdelivr.net/npm/"
+url:            #
+
+permalink:      "/:title:output_ext"
+typography:     "article"
+color_scheme:   "prefer"
+accent_color:   ""
+search:         "content"
+
+sidebar:
+  header:     false
+  sticky:     true
+  profile:
+    image:     "/assets/databook/img/avatar.png"
+    title:     "Nickname"
+    subtitle:  "Name"
+    bio:       "bio"
+  links:
+    -
+      text:     "Home"
+      url:      "/"
+    -
+      text:     "Archive"
+      url:      "/archive/"
+    -
+      text:     "Categories"
+      url:      "/categories/"
+    -
+      text:     "Tags"
+      url:      "/tags/"
+    -
+      text:     "About"
+      url:      "/about.html"
+  buttons:
+    -
+      name:     "twitter"
+      value:    "twitter"
+    -
+      name:     "facebook"
+      value:    "facebook"
+    -
+      name:     "email"
+      value:    "example@email.com"
+
+header:
+  search: true
+
+##
+## Blog settings
+##
+
+blog_style:     "full"
+
+paginate:       10
+paginate_path:  "/page:num/"
+
+
+##
+## Default settings
+##
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      permalink: "/:categories/:title:output_ext"
+
+##
+## Service settings
+##
+
+toc:            true
+analytics:      false
+comments:       false
+
+chartjs:        false
+flowchart:      false
+katex:          false
+mathjax:        false
+mermaid:        false
+
+google_analytics:
+  id:           ""
+
+disqus:
+  shortname:    ""
+
+gitalk:
+  clientID:     ""
+  clientSecret: ""
+  repo:         ""
+  owner:        ""
+  proxy:        ""
+
+scrollspy: true
+
+
+##
+## Build settings
+##
+
+plugins:
+  - "jekyll-paginate"
+  - "jekyll-sitemap"
+  - "jekyll-avatar"
+  - "jekyll-feed"
+  - "jekyll-mentions"
+  - "jekyll-redirect-from"
+  - "jemoji"
+
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
