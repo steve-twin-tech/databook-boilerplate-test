@@ -37,19 +37,19 @@ sidebar:
   links:
     -
       text:     "Home"
-      url:      "/"
+      url:      "/databook-boilerplate-test"
     -
       text:     "Archive"
-      url:      "/archive/"
+      url:      "/databook-boilerplate-test/archive/"
     -
       text:     "Categories"
-      url:      "/categories/"
+      url:      "/databook-boilerplate-test/categories/"
     -
       text:     "Tags"
-      url:      "/tags/"
+      url:      "/databook-boilerplate-test/tags/"
     -
       text:     "About"
-      url:      "/about.html"
+      url:      "/databook-boilerplate-test/about.html"
   buttons:
     -
       name:     "twitter"
@@ -83,7 +83,7 @@ defaults:
     scope:
       type: "posts"
     values:
-      permalink: "/:categories/:title:output_ext"
+      permalink: "/databook-boilerplate-test/:categories/:title:output_ext"
 
 ##
 ## Service settings
