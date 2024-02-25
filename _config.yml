@@ -15,7 +15,7 @@ logo:           "assets/databook/img/logo.png"
 copyright:      ""
 keywords:       ""
 
-baseurl:        #
+baseurl:        "/databook-boilerplate-test"
 language:       "en-US"
 npm_cdn:        "https://cdn.jsdelivr.net/npm/"
 url:            #
@@ -37,19 +37,19 @@ sidebar:
   links:
     -
       text:     "Home"
-      url:      "/databook-boilerplate-test"
+      url:      "/"
     -
       text:     "Archive"
-      url:      "/databook-boilerplate-test/archive/"
+      url:      "/archive/"
     -
       text:     "Categories"
-      url:      "/databook-boilerplate-test/categories/"
+      url:      "/categories/"
     -
       text:     "Tags"
-      url:      "/databook-boilerplate-test/tags/"
+      url:      "/tags/"
     -
       text:     "About"
-      url:      "/databook-boilerplate-test/about.html"
+      url:      "/about.html"
   buttons:
     -
       name:     "twitter"
@@ -83,7 +83,7 @@ defaults:
     scope:
       type: "posts"
     values:
-      permalink: "/databook-boilerplate-test/:categories/:title:output_ext"
+      permalink: "/:categories/:title:output_ext"
 
 ##
 ## Service settings
